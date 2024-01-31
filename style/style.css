@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.field,
+.field_1 {
+    display: flex;
+}
+
+.field input,
+.field_1 input {
+    display: none;
+}
+
+.field label,
+.field_1 label {
+    width: 40px;
+    height: 30px;
+    background-color: transparent;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+}
+
+.field label::after,
+.field_1 label::after {
+    content: attr(data-label);
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 25px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#off:checked+label,
+.field #off:checked+label {
+    background-color: white;
+    border-color: #dddddd;
+    color: #333;
+}
+
+#on:checked+label,
+.field #on:checked+label {
+    background-color: #dddddd;
+    border-color: #999999;
+}
+
+.field_1 label {
+    background-color: white;
+    color: #333;
+}
+
+#off_1:checked+label,
+.field_1 #off_1:checked+label {
+    background-color: #6fde5f;
+    border-color: #6fde5f;
+    color: white;
+}
+
+#on_1:checked+label,
+.field_1 #on_1:checked+label {
+    background-color: transparent;
+    border-color: #6fde5f;
+    color: #6fde5f;
+}
+
+.field_3,
+.field_2,
+.field_4 {
+    display: flex;
+    align-items: center;
+   
+   
+    
+}
+
+.field_3 input,
+.field_2 input,
+.field_4 input {
+    display: none;
+    
+}
+   
+
+.field_2 label,
+.field_4 label {
+    width: 60px; 
+    height: 30px;
+    background-color: #dddddd; 
+    border: 2px solid #c7c4c4; 
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s, background-color 0.3s; 
+}
+
+.field_2 label::after,
+.field_4 label::after {
+    content: attr(data-label);
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#disable:checked+label {
+    transform: translateX(60%); 
+}
+
+.field_3 label,
+.field_4 label {
+    width: 60px; 
+    height: 30px;
+    background-color: #ddbf16; 
+    border: 2px solid #dddddd;    
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s, background-color 0.3s; 
+}
+
+.field_3 label::after,
+.field_4 label::after {
+    content: attr(data-label);
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#on_2:checked+label,
+.field_4 #on_2:checked+label {
+    transform: translateX(60%); 
+}
